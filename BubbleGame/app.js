@@ -16,6 +16,8 @@ let username;
 let difficulity = 1500;
 let multiple = 1;
 
+let continueBtn;
+
 easyMode.addEventListener("click", () => {
   easyMode.disabled = true;
   mediumMode.disabled = false;
@@ -65,7 +67,7 @@ startBtn.addEventListener("click", function () {
 
 stopBtn.addEventListener("click", function () {
   startBtn.style.display = "none";
-  let continueBtn = document.createElement("button");
+  continueBtn = document.createElement("button");
   continueBtn.setAttribute("class", "btn btn-primary");
   continueBtn.innerText = "Continue";
   let btnBox = document.querySelector(".text-center");
@@ -94,10 +96,12 @@ stopBtn.addEventListener("click", function () {
 reset.addEventListener("click", resetGame);
 
 function resetGame() {
+  easyMode.disabled = false;
+  mediumMode.disabled = false;
+  hardMode.disabled = false;
 
-      easyMode.disabled = false;
-      mediumMode.disabled = false;
-      hardMode.disabled = false;
+  startBtn.style.display = "inline";
+  continueBtn.style.display = "none";
 
   startBtn.disabled = false;
   stopBtn.disabled = false;
@@ -131,12 +135,10 @@ function createBubble() {
       "8d82b5_MK3_Shao_Kahn_Laugh_Sound_Effect.mp3"
     );
     GameOverSound.play();
-      setTimeout(() => {
-              alert(
-                `Game Over!!! ${userPromtName}, Your score is ${userScore}`
-              );
-              resetGame();
-      }, 2000);
+    setTimeout(() => {
+      alert(`Game Over!!! ${userPromtName}, Your score is ${userScore}`);
+      resetGame();
+    }, 2000);
   }
 
   bubble.addEventListener("click", function () {
