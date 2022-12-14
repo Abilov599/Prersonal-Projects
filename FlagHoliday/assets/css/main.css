@@ -1,0 +1,56 @@
+body.dark {
+  background-color: #202c37;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+}
+body nav h1 {
+  padding: 10px 0;
+}
+body nav h1.dark {
+  color: #fff;
+}
+body nav div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+body nav div.dark {
+  color: #fff;
+}
+body nav div a {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  padding-top: 10px;
+}
+body .module {
+  display: none;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+}
+body div {
+  margin: 10px 0 20px;
+}
+body div input {
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+body .jeyhun {
+  display: flex;
+}
+body .jeyhun #countries {
+  row-gap: 20px;
+  column-gap: 70px;
+}
+body .jeyhun #countries .card {
+  padding: 0;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

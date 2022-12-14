@@ -1,0 +1,75 @@
+body {
+
+    // background-color: #202c37;
+    &.dark {
+        background-color: #202c37;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            padding: 10px 0;
+
+            &.dark {
+                color: #fff;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &.dark {
+                color: #fff;
+            }
+
+            a {
+                background: none;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                height: 50px;
+                width: 100px;
+                padding-top: 10px;
+
+                i {}
+            }
+        }
+    }
+
+    .module {
+        display: none;
+        width: 1000px;
+        height: 500px;
+        background-color: white;
+    }
+
+    div {
+        margin: 10px 0 20px;
+
+        input {
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .jeyhun {
+        display: flex;
+
+        #countries {
+            row-gap: 20px;
+            column-gap: 70px;
+
+            .card {
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
