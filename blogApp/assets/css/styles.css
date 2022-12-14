@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(221, 22, 22);
+}
+
+#blog-list {
+    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-content {
+  font-size: 1.1rem;
+  color: rgb(221, 22, 22);
+}
+
+.card-author {
+  font-size: 1.1rem;
+  color: rgba(53, 51, 51, 0.879);
+}
+
+.delBtn {
+  background-color: rgb(221, 22, 22);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: rgb(221, 161, 22);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(53, 51, 51);
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.blogForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  */
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 0.5rem;
+}
+
+input {
+  height: 25px;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 200px;
+  border-radius: 8px;
+}
+
+select {
+  height: 25px;
+  border-radius: 8px;
+}
+
+#submit {
+  width: 20%;
+  margin-left: 40%;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgb(221, 22, 22);
+  border: none;
+  color: #fff;
+}

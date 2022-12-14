@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/blog.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav>
+      <div class="blogName"><h1>The Blog Website</h1></div>
+      <div class="navigation">
+        <a href="./home.html">Home</a>
+        <a href="./blog.html">New Blog</a>
+      </div>
+    </nav>
+    <section class="blogForm">
+      <div class="formDiv">
+      <h1>Add a New Blog</h1>
+      <form id="blog-form">
+        <label for="title">Blog title:</label>
+        <input type="text" name="title" id="title" />
+        <label for="content">Blog body:</label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <label for="author">Blog author:</label>
+        <select name="author" id="author">
+          <option value="Jeyhun">Jeyhun</option>
+          <option value="Kanan">Kanan</option>
+          <option value="Qurban">Qurban</option>
+          <option value="Aladdin">Aladdin</option>
+        </select>
+        <button id="submit" type="submit">Add Blog</button>
+      </form>
+      </div>
+    </section>
+  </body>
+</html>
