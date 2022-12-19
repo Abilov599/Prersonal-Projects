@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/index.js" defer></script>
+    <title>Rental</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="left">
+        <header>
+          <span><i id="close-nav" class="fa-solid fa-xmark"></i></span>
+          <div>
+            <h1>Rent from $99</h1>
+            <p>per night</p>
+          </div>
+        </header>
+        <form class="form-section">
+          <div class="input-control">
+            <label for="check-in">
+              <i class="fa-regular fa-calendar-check"></i>
+              Check In
+            </label>
+            <input id="check-in" type="date" />
+            <div class="error">This field is required</div>
+          </div>
+          <div class="input-control">
+            <label for="check-out">
+              <i class="fa-regular fa-calendar"></i>
+              Check Out
+            </label>
+            <input id="check-out" type="date" />
+            <div class="error">This field is required</div>
+          </div>
+          <div class="input-control">
+            <label for="adults">
+              <i class="fa-solid fa-person"></i>
+              Adults
+            </label>
+            <input
+              id="adults"
+              type="number"
+              value="1"
+              name="adults"
+              min="1"
+              max="6"
+            />
+          </div>
+          <div class="input-control">
+            <label for="kids">
+              <i class="fa-solid fa-child-reaching"></i>
+              Kids
+            </label>
+            <input
+              id="kids"
+              type="number"
+              value=""
+              name="kids"
+              min="0"
+              max="6"
+            />
+          </div>
+          <button type="submit">
+            <span
+              ><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              <p>Search availability</p></span
+            >
+          </button>
+        </form>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#apartment"
+                ><i style="margin-right: 5px" class="fa-solid fa-building"></i>
+                Apartment</a
+              >
+            </li>
+            <li>
+              <a href="#subscribe"><i class="fa-solid fa-rss"></i> Subscribe</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-sharp fa-solid fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        <nav>
+          <div id="logo"><h1>Rental</h1></div>
+          <div id="navigation">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+              <li>
+                <a href="#apartment">Apartment</a>
+              </li>
+              <li>
+                <a href="#subscribe">Subscribe</a>
+              </li>
+              <li>
+                <a href="#contact"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section id="apartment">
+          <div class="slider">
+            <h2>The Apartament</h2>
+          </div>
+          <div class="main-image-container">
+            <img
+              class="main-image"
+              src="./assets/images/living-room.jpg"
+              alt=""
+            />
+            <span><p id="img-txt">Living Room</p></span>
+          </div>
+          <div class="sub-imgs">
+            <div class="img-opacity">
+              <img
+                name="Living Room"
+                src="./assets/images/living-room.jpg"
+                alt=""
+              />
+            </div>
+            <div class="img-opacity">
+              <img
+                name="Dining Room"
+                src="./assets/images/dining-room.jpg"
+                alt=""
+              />
+            </div>
+            <div class="img-opacity">
+              <img name="Bedroom" src="./assets/images/bedroom.jpg" alt="" />
+            </div>
+            <div class="img-opacity">
+              <img
+                name="Living Room II"
+                src="./assets/images/living-room-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section id="content">
+          <div id="space-amenities">
+            <h4>The space</h4>
+            <div class="row">
+              <div class="col">
+                <p>
+                  <i id="adult" class="fa-solid fa-person"></i>Max people: 4
+                </p>
+                <p><i id="bath" class="fa-solid fa-bath"></i>Bathrooms: 2</p>
+                <p><i class="fa-solid fa-bed"></i> Bedrooms: 1</p>
+              </div>
+              <div class="col">
+                <p><i class="fa-regular fa-clock"></i> Check In: After 3PM</p>
+                <p><i class="fa-regular fa-clock"></i> Check Out: 12PM</p>
+              </div>
+            </div>
+            <hr style="opacity: 0.5" />
+          </div>
+          <div id="space-amenities">
+            <h4>Amenities</h4>
+            <div class="row">
+              <div class="col">
+                <p><i id="shower" class="fa-solid fa-shower"></i>Shower</p>
+                <p><i id="wifi" class="fa-solid fa-wifi"></i>WiFi</p>
+                <p><i id="tv" class="fa-solid fa-tv"></i>TV</p>
+              </div>
+              <div class="col">
+                <p><i id="kitchen" class="fa-solid fa-utensils"></i>Kitchen</p>
+                <p>
+                  <i id="heating" class="fa-solid fa-temperature-high"></i
+                  >Heating
+                </p>
+                <p>
+                  <i id="accessible" class="fa-solid fa-wheelchair"></i
+                  >Accessible
+                </p>
+              </div>
+            </div>
+            <hr style="opacity: 0.5" />
+          </div>
+          <div id="subscribe" class="info-rules">
+            <h4>Extra Info</h4>
+            <p>
+              Our apartment is really clean and we like to keep it that way.
+              Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              We accept: <i class="fa-regular fa-credit-card"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+            </p>
+            <hr style="opacity: 0.5" />
+          </div>
+          <div class="info-rules">
+            <h4>Rules</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Subscribe to receive updates on available dates and special
+              offers.
+            </p>
+            <button id="subBtn">Subscribe</button>
+            <hr style="opacity: 0.5" />
+          </div>
+          <div id="contact">
+            <h2>Contact</h2>
+            <p>
+              <i id="adress" class="fa-solid fa-location-dot"></i>Chicago, US
+            </p>
+            <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+            <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+            <p>Questions? Go ahead, ask them:</p>
+            <input placeholder="Name" type="text" />
+            <input placeholder="Email" type="text" />
+            <input placeholder="Message" type="text" />
+            <button>Send a Message</button>
+          </div>
+        </section>
+        <hr style="opacity: 0.5" />
+        <!-----------------MODAL----------------->
+        <section id="subscribe-modal">
+          <div class="modal-content">
+            <span><i id="close-modal" class="fa-solid fa-xmark"></i></span>
+            <h2>SUBSCRIBE</h2>
+            <p>
+              Join our mailing list to receive updates on available dates and
+              special offers.
+            </p>
+            <form id="subscribe-form" action="">
+              <input placeholder="Enter e-mail" type="text" />
+              <button type="submit" id="subscribe-submit">Subscribe</button>
+            </form>
+          </div>
+        </section>
+        <footer>
+          <p>
+            Powered by
+            <a href="https://www.instagram.com/abilovv599/">Abilovv599</a>
+          </p>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

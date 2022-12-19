@@ -1,0 +1,473 @@
+nav {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  width: inherit;
+  max-width: 687px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+nav #logo h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+}
+nav #navigation {
+  display: flex;
+  align-items: center;
+}
+nav #navigation i {
+  display: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+nav #navigation ul {
+  display: flex;
+  gap: 20px;
+}
+nav #navigation ul li {
+  list-style: none;
+  color: #ffffff;
+}
+nav #navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    max-width: none;
+  }
+  nav #navigation i {
+    display: block;
+  }
+  nav #navigation ul {
+    display: none;
+  }
+}
+
+footer p a {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 0 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  max-width: 979px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1b1b;
+}
+body .container {
+  display: flex;
+  width: inherit;
+  background-color: white;
+}
+body .container .left {
+  background-color: #f1f1f1;
+  width: 259px;
+  position: fixed;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+body .container .left header {
+  position: relative;
+}
+body .container .left header i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  body .container .left header i {
+    display: block;
+  }
+}
+body .container .left header div {
+  padding: 0 16px 16px;
+}
+body .container .left header div h1 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+body .container .left header div p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+body .container .left .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px 16px;
+}
+body .container .left .form-section .input-control {
+  display: flex;
+  flex-direction: column;
+}
+body .container .left .form-section .input-control label {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+body .container .left .form-section .input-control input {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.7058823529);
+}
+body .container .left .form-section .input-control .error {
+  margin-top: 5px;
+  color: red;
+  display: none;
+}
+body .container .left .form-section button {
+  background-color: #4caf50;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  border: none;
+  padding: 9.2px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+body .container .left .form-section button span {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+body .container .left .form-section button span i {
+  margin-right: 20px;
+}
+body .container .left .form-section button span p {
+  padding: 0;
+  margin: 0;
+}
+body .container .left .form-section button:hover {
+  background-color: #43a047;
+}
+@media only screen and (max-width: 768px) {
+  body .container .left {
+    display: none;
+  }
+}
+body .container .navigation ul {
+  margin: 0;
+  padding: 0;
+}
+body .container .navigation ul li {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.7058823529);
+  font-size: 16px;
+  padding: 16px;
+}
+body .container .navigation ul li a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .container .navigation ul li:hover {
+  background-color: #B8B8B8;
+}
+body .container .right {
+  width: 100%;
+  max-width: 719px;
+  margin-left: 259px;
+  padding: 0 16px;
+}
+body .container .right #apartment {
+  width: inherit;
+}
+@media only screen and (max-width: 768px) {
+  body .container .right #apartment {
+    padding: 0 16px;
+  }
+}
+body .container .right #apartment .slider {
+  width: inherit;
+}
+body .container .right #apartment .slider h2 {
+  color: #4caf50;
+  font-size: 30px;
+  font-weight: 300;
+}
+body .container .right #apartment .main-image-container {
+  width: inherit;
+  height: 400px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+body .container .right #apartment .main-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .container .right #apartment .main-image-container span {
+  position: absolute;
+  padding: 16px;
+  bottom: 12px;
+  left: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+body .container .right #apartment .main-image-container span p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+body .container .right #apartment .sub-imgs {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+body .container .right #apartment .sub-imgs .img-opacity {
+  width: 25%;
+  opacity: 0.7;
+}
+body .container .right #apartment .sub-imgs .img-opacity:hover {
+  opacity: 1;
+}
+body .container .right #apartment .sub-imgs .img-opacity img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .container .right #content {
+  width: inherit;
+}
+@media only screen and (max-width: 768px) {
+  body .container .right #content {
+    padding: 0 16px;
+  }
+}
+body .container .right #content #space-amenities {
+  width: inherit;
+}
+body .container .right #content #space-amenities h4 {
+  font-size: 20px;
+  margin-bottom: 13.3px;
+}
+body .container .right #content #space-amenities .row {
+  display: flex;
+  width: inherit;
+}
+body .container .right #content #space-amenities .row .col {
+  width: 50%;
+}
+body .container .right #content #space-amenities .row .col p #adult {
+  padding-left: 6px;
+  padding-right: 9px;
+}
+body .container .right #content #space-amenities .row .col p #bath {
+  padding-left: 2.5px;
+  padding-right: 6px;
+}
+body .container .right #content #space-amenities .row .col p #shower {
+  padding-left: 9.5px;
+  padding-right: 9px;
+}
+body .container .right #content #space-amenities .row .col p #wifi {
+  padding-left: 6px;
+  padding-right: 9px;
+}
+body .container .right #content #space-amenities .row .col p #tv {
+  padding-left: 6px;
+  padding-right: 9px;
+}
+body .container .right #content #space-amenities .row .col p #kitchen {
+  padding-left: 4px;
+  padding-right: 12px;
+}
+body .container .right #content #space-amenities .row .col p #heating {
+  padding-left: 6px;
+  padding-right: 9px;
+}
+body .container .right #content #space-amenities .row .col p #accessible {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+body .container .right #content .info-rules h4 {
+  font-size: 20px;
+}
+body .container .right #content .info-rules button {
+  background-color: #4caf50;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  border: none;
+  padding: 9.2px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 35%;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+body .container .right #content .info-rules button:hover {
+  background-color: #43a047;
+}
+body .container .right #content #contact {
+  display: flex;
+  flex-direction: column;
+}
+body .container .right #content #contact h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+body .container .right #content #contact p {
+  margin: 7px 0;
+}
+body .container .right #content #contact p #adress {
+  padding-left: 2.5px;
+  margin-right: 11px;
+}
+body .container .right #content #contact p i {
+  margin-right: 10px;
+}
+body .container .right #content #contact input {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+body .container .right #content #contact button {
+  background-color: #4caf50;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  border: none;
+  padding: 9.2px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 35%;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+body .container .right #content #contact button:hover {
+  background-color: #43a047;
+}
+@media only screen and (max-width: 768px) {
+  body .container .right {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .container {
+    justify-content: center;
+  }
+}
+
+#subscribe-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#subscribe-modal .modal-content {
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 16px 40px;
+  border: 1px solid #888;
+  width: 60%;
+}
+#subscribe-modal .modal-content i {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#subscribe-modal .modal-content h2 {
+  letter-spacing: 4px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+@media only screen and (max-width: 768px) {
+  #subscribe-modal .modal-content {
+    width: 90%;
+  }
+  #subscribe-modal .modal-content i {
+    right: 20px;
+  }
+}
+#subscribe-modal .modal-content #subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#subscribe-modal .modal-content #subscribe-form input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+#subscribe-modal .modal-content #subscribe-form button {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  #subscribe-modal .modal-content #subscribe-form button {
+    width: 100%;
+  }
+}
+#subscribe-modal .modal-content #subscribe-form button:hover {
+  background-color: #45a049;
+}/*# sourceMappingURL=main.css.map */
