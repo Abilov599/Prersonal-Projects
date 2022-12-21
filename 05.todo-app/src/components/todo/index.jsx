@@ -35,7 +35,7 @@ const TodoApp = () => {
   };
 
   const handleUpdate = () => {
-    todos.map((element) => {
+    todos.forEach((element) => {
       if (element.todoText === updValue && element.todoId === updId) {
         element.todoText = inputValue;
       }
@@ -69,7 +69,7 @@ const TodoApp = () => {
               </p>
             )}
           </Col>
-          <Col xs={3}>
+          <Col className="d-flex ps-0" xs={3}>
             <Button
               className="me-2"
               variant="primary"
@@ -88,7 +88,7 @@ const TodoApp = () => {
             <ListGroup key={element.todoId} className="mb-3">
               <Row className="d-flex justify-content-center">
                 <Col xs={8}>
-                  <ListGroup.Item className="d-flex justify-content-between align-items-center pe-0">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-center">
                     <p id={element.todoId} className="m-0">
                       {element.todoText}
                     </p>

@@ -20,16 +20,28 @@ function fetching() {
       document.querySelector("#blog-list").innerHTML += blogCard;
     }
 
-    // let editBtn = document.querySelectorAll(".editBtn");
-    // for (let i = 0; i < editBtn.length; i++) {
-    //   editBtn[i].addEventListener("click", (e) => {
-    //     let id = e.target.getAttribute("id");
-    //     let title = document.querySelector(".card-title").value;
-    //     let body = document.querySelector(".card-content").value;
-    //     let author = document.querySelector(".card-author").value;
-    //     editBtn[i].closest(".card").innerHTML = ``;
-    //   });
-    // }
+    let editBtn = document.querySelectorAll(".editBtn");
+    for (let i = 0; i < editBtn.length; i++) {
+      editBtn[i].addEventListener("click", (e) => {
+        let id = e.target.getAttribute("id");
+        editBtn[i].closest(".card").innerHTML = `
+                <div class="card">
+            <div class="card-body">
+                <label>Tittle</label>
+                <input class="edit-title">
+                <label>Content</label>
+                <input class="edit-content">
+                <label>Author</label>
+                <input class="edit-author">
+                <div class= "btnBox">
+                <button class="saveBtn" id="${id}">Save</button>
+                <button class="cancelBtn" id="${id}">Cancel</button>
+                </div>
+            </div>
+        </div>
+        `;
+      });
+    }
 
     let deleteBtn = document.querySelectorAll(".delBtn");
     for (let i = 0; i < deleteBtn.length; i++) {
