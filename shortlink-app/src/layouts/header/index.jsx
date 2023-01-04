@@ -26,7 +26,7 @@ const Header = () => {
           <button className="btn sign-up">Sign Up</button>
         </div>
       </nav>
-      <div id="main">
+      <div id="header-main">
         <div id="header-text">
           <h1>More than just shorter links</h1>
           <p>

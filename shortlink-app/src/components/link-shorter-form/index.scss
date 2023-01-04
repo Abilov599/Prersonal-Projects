@@ -1,0 +1,43 @@
+#shortly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 120px;
+  form {
+    width: 100%;
+    margin-top: -81px;
+    padding: 52px 64px;
+    background-image: url("../../assets/images/purple-bg2.png");
+    border-radius: 10px;
+    input {
+      width: 769px;
+      padding: 14px 32px;
+      margin-right: 24px;
+      font-size: 20px;
+      font-weight: 500px;
+      border-radius: 10px;
+      border: none;
+    }
+    & ::placeholder {
+      color: #34313d;
+      opacity: 0.5;
+    }
+    & :focus {
+      outline: 3px solid rgb(54, 119, 194);
+    }
+    #shorten-it {
+      padding: 14px 40px;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      background-color: #2bd0d0;
+      color: white;
+      cursor: pointer;
+    }
+    #shorten-it:hover {
+      background-color: #2bd0d0;
+    }
+  }
+}

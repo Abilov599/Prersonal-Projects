@@ -50,7 +50,7 @@
       }
     }
   }
-  #main {
+  #header-main {
     margin-left: 165px;
     display: flex;
     #header-text {
@@ -75,6 +75,7 @@
         font-weight: 700;
         font-size: 15px;
         margin-top: 38px;
+        cursor: pointer;
 
         padding: 12px 40px;
         color: white;
