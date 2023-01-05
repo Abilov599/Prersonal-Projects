@@ -13,7 +13,54 @@ footer {
     }
   }
   #footer-bottom {
+    display: flex;
     padding: 73px 165px 70px;
     background-color: #232127;
+    #logo-white {
+      margin-right: 261px;
+    }
+    #footer-links {
+      display: flex;
+      gap: 100px;
+      .info {
+        p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.25px;
+          color: #ffffff;
+          margin-bottom: 22px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          li {
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.234375px;
+            color: #bfbfbf;
+          }
+          & :hover {
+            color: #2bd0d0;
+          }
+        }
+      }
+      #contact-icons {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          li {
+            cursor: pointer;
+            svg:hover {
+              fill: #2bd0d0;
+            }
+          }
+        }
+      }
+    }
   }
 }
