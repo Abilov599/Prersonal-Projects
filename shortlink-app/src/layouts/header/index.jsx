@@ -1,5 +1,5 @@
 import React from "react";
-import shortly from "../../assets/images/Shortly.svg";
+import shortly from "../../assets/images/logo/Shortly.svg";
 import headerImg from "../../assets/images/working_with_computer.svg";
 import BtnGetStarted from "../../components/btn-get-started";
 import "./index.scss";
@@ -12,7 +12,7 @@ const Header = () => {
           <img src={shortly} alt="Shortly" />
           <ul>
             <li>
-              <a href="">Features</a>
+              <a href="#features">Features</a>
             </li>
             <li>
               <a href="">Pricing</a>
