@@ -1,5 +1,5 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./App.css";
+import Footer from "./layouts/footer";
 import Header from "./layouts/header";
 
 function App() {
@@ -7,13 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route />
-          <Route />
-          <Route />
-        </Routes>
-      </BrowserRouter>
+      
     </div>
   );
 }
