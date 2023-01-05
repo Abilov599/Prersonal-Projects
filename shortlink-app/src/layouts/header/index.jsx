@@ -1,6 +1,7 @@
 import React from "react";
 import shortly from "../../assets/images/Shortly.svg";
 import headerImg from "../../assets/images/working_with_computer.svg";
+import BtnGetStarted from "../../components/btn-get-started";
 import "./index.scss";
 
 const Header = () => {
@@ -33,7 +34,7 @@ const Header = () => {
             Build your brand's recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button>Get Started</button>
+          <BtnGetStarted />
         </div>
         <div id="header-img">
           <img src={headerImg} alt="working_with_computer" />
